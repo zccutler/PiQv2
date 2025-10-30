@@ -13,7 +13,7 @@ import sys
 GPIO.setmode(GPIO.BCM)
 
 # init list with pin numbers
-pinList = [17]
+pinList = [18]
 
 # loop through pins and set mode and state to 'high'
 for i in pinList: 

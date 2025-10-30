@@ -38,7 +38,7 @@ FROM_EMAIL_ADDRESS_PWD = 'Raspberry-pi-q17!'
 #================ GLOBAL VARIABLES - NEED CONFIG ================#
 
 #==================== FIXED GLOBAL VARIABLES ====================#
-GPIO_RELAY_FAN_PIN = 17 # this is the GPIO PIN number on the Raspberry for the Fan Relay
+GPIO_RELAY_FAN_PIN = 18 # this is the GPIO PIN number on the Raspberry for the Fan Relay
 bus = smbus.SMBus(1)
 GPIO.setmode(GPIO.BCM)
 pinList = [GPIO_RELAY_FAN_PIN]
