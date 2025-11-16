@@ -14,7 +14,7 @@ def read_temp_c():
     try:
         data = bus.read_i2c_block_data(I2C_ADDR, 1, 2)
         raw = (data[0] << 8) | data[1]
-        celsius = raw #/ 5.0  # adjust scaling if needed for your probe
+        celsius = raw / 5.0  # adjust scaling if needed for your probe
         return celsius
     except Exception as e:
         print(f"Error reading probe: {e}")
